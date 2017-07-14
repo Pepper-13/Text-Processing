@@ -1,0 +1,18 @@
+#Removal of Stop words
+
+leaf_words = "s","es","ed","er","ly","ing"
+    
+for words in line_stop_words:
+  #line_stop_words is the list of words without any "stop words" present, eg only the essential info  
+    stemming_word = ""
+    
+    for chars in words:
+    
+        print chars
+        stemming_word = chars
+        
+        if stemming_word[-1] == leaf_words:
+            
+            stemming_word[-1] = ""
+            #to remove that letter from the string
+        print stemming_word
