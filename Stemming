@@ -1,0 +1,32 @@
+#Code for Stemming Breakup
+#Taking 'ing', 'ed' and 's' into consideration
+#Uppercase in first letter is considered as noun and taken care
+#We can add more leafs if required like leaf_words = "es","er","ly"
+
+word = input("Enter the word:") 
+x = 'ing' 
+y = 'ed' 
+z = 's' 
+first = word[:1] 
+last = word[-1:] 
+uppercase = first.upper 
+if word == uppercase: 
+  print("")
+
+elif (x in word) == True: 
+  word = (word.replace('ing',''))
+  print(word)
+
+elif (y in word) == True: 
+  word = (word.replace('ed',''))
+  print(word)
+
+elif (z in word) == True: 
+  word = (word.replace('s',''))
+  print(word)
+ 
+ 
+#Using Library NLTK
+
+from nltk.stem.porter import PorterStemmer
+PorterStemmer.stem_word(word)
