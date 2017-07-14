@@ -29,4 +29,5 @@ elif (z in word) == True:
 #Using Library NLTK
 
 from nltk.stem.porter import PorterStemmer
-PorterStemmer.stem_word(word)
+port_stem = PorterStemmer() 
+port_stem.stem_word(word)
