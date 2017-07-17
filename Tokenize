@@ -1,0 +1,14 @@
+import nltk
+sentence = """At eight o'clock on Friday morning
+... Harry didn't have bfast ."""
+tokens = nltk.word_tokenize(sentence)
+tokens
+
+O/P : ['At', 'eight', "o'clock", 'on', 'Friday', 'morning',
+'Harry', 'did', "n't", 'have', 'bfast', '.']
+
+tagged = nltk.pos_tag(tokens)
+tagged[0:6]
+
+O/P: [('At', 'IN'), ('eight', 'CD'), ("o'clock", 'JJ'), ('on', 'IN'),
+('Thursday', 'NNP'), ('morning', 'NN')]
