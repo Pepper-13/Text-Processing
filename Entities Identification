@@ -4,6 +4,6 @@ entities
 
 O/P:   Tree('S', [('At', 'IN'), ('eight', 'CD'), ("o'clock", 'JJ'),
            ('on', 'IN'), ('Friday', 'NNP'), ('morning', 'NN'),
-       Tree('PERSON', [('Arthur', 'NNP')]),
+       Tree('PERSON', [('Harry', 'NNP')]),
            ('did', 'VBD'), ("n't", 'RB'), ('have', 'VB'),
            ('bfast', 'RB'), ('.', '.')])
